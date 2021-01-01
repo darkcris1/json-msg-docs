@@ -1,15 +1,24 @@
 {
-  "name": "next-react-components",
+  "name": "doc-site-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
+    "marked": "^1.2.7",
     "next": "10.0.4",
+    "nprogress": "^0.2.0",
+    "prismjs": "^1.22.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sass": "^1.30.0"
+  },
+  "devDependencies": {
+    "raw-loader": "^4.0.2"
   }
 }
