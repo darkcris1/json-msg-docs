@@ -39,7 +39,7 @@ export default {
     { href: '/types', text: 'Types', subLinks: typeSubLinks },
     { href: '/validation', text: 'Validation', subLinks: validationSublinks },
     { href: '/custom-messages', text: 'Custom Messages' },
-    { href: '/custom-validator', text: 'Custom Validator' },
+    { href: '/custom-validator', text: 'Custom Validation' },
     { href: '/api', text: 'API', subLinks: apiSublinks },
   ],
   footer: (
