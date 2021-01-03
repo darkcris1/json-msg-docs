@@ -1,5 +1,3 @@
-import jm from 'json-msg'
-
 const typeSubLinks = [
   { href: '/types#str', text: 'jm.str()' },
   { href: '/types#num', text: 'jm.num()' },
