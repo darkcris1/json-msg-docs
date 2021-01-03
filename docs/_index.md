@@ -1,6 +1,6 @@
 --vars
 
-title: Getting Started with Json-Msg | Documentation
+title: Json-Msg | Documentation
 description: json-msg is a lightweight schema validator
 author: Cris Fandino Jr.
 
@@ -9,7 +9,7 @@ author: Cris Fandino Jr.
 # @(title)
 
 JSON-MSG is a lightweight alternative for Joi or Yup or any json validator.
-Unlike Joi, json-msg only focus on error messages
+Unlike Joi, json-msg only focus on error messages and validations
 
 # Features
 
