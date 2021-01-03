@@ -1,6 +1,7 @@
 --vars
 
 title: Getting Started with Json-Msg
+description: json-msg is a lightweight schema validator
 author: Cris Fandino Jr.
 
 --
