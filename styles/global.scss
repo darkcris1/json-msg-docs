@@ -48,7 +48,7 @@ div.container {
   @include responsive('medium') {
     height: 100%;
     justify-content: center;
-    grid-template-columns: 250px 1fr 100px;
+    grid-template-columns: 250px 400px 100px;
   }
   @include responsive('large') {
     grid-template-columns: 250px 600px 200px;
@@ -56,25 +56,4 @@ div.container {
 }
 @import './mainMD';
 @import './sidebar';
-
-.account-list {
-  ul {
-    position: sticky;
-    top: 0;
-    padding: 1rem;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    @include responsive('medium') {
-      justify-content: initial;
-      flex-direction: column;
-    }
-    list-style-type: none;
-    li {
-      padding: 0.5rem;
-      &:hover {
-        transform: rotate(360deg);
-      }
-    }
-  }
-}
+@import './accountList';

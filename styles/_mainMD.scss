@@ -1,5 +1,5 @@
 main {
-  padding: 1rem;
+  padding: 1.5rem;
   color: var(--text-color);
   max-width: 100%;
   blockquote {
@@ -20,8 +20,84 @@ main {
     max-height: 300px;
     margin: 1rem;
   }
+  a.anchor {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      transform: translate(-110%, -50%);
+      top: 50%;
+      color: var(--md-links-color);
+      content: '#';
+      display: none;
+    }
+  }
   pre[class*='language-'] {
     border-radius: 5px;
     max-width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:hover > a.anchor:before {
+      display: block;
+    }
+  }
+
+  table {
+    color: #333;
+    background: white;
+    border: 1px solid grey;
+    font-size: 12pt;
+    border-collapse: collapse;
+    thead th,
+    tfoot th {
+      color: #777;
+      background: rgba(0, 0, 0, 0.1);
+    }
+    caption {
+      padding: 0.5em;
+    }
+
+    th,
+    td {
+      padding: 0.5em;
+      border: 1px solid lightgrey;
+    }
+  }
+}
+
+.prev-next-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  a {
+    padding: 1rem;
+    color: $text-color;
+    position: relative;
+    &:hover {
+      color: darken($text-color, 30%);
+    }
+    &::after,
+    &::before {
+      color: inherit;
+      font-weight: bolder;
+      font-size: 1.3rem;
+      margin: 1rem;
+    }
+  }
+  a.next-page {
+    &::after {
+      content: '\00BB';
+    }
+  }
+  a.prev-page {
+    &::before {
+      content: '\00AB';
+    }
   }
 }

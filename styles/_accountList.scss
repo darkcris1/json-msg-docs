@@ -1,0 +1,18 @@
+.account-list {
+  ul {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    @include responsive('medium') {
+      justify-content: initial;
+      flex-direction: column;
+    }
+    list-style-type: none;
+    li {
+      padding: 0.5rem;
+    }
+  }
+}

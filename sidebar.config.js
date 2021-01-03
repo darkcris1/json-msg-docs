@@ -1,3 +1,5 @@
+import jm from 'json-msg'
+
 const typeSubLinks = [
   { href: '/types#str', text: 'jm.str()' },
   { href: '/types#num', text: 'jm.num()' },
@@ -7,9 +9,22 @@ const typeSubLinks = [
   { href: '/types#any', text: 'jm.any()' },
 ]
 const validationSublinks = [
-  { href: '/validation#validate', text: 'jm.validate()' },
-  { href: '/validation#validationasync', text: 'jm.validateAsync()' },
-  { href: '/validation#option', text: 'jm.validate(option?)' },
+  { href: '/validation#validation', text: 'jm.validate()' },
+  { href: '/validation#validateasync', text: 'jm.validateAsync()' },
+]
+const apiSublinks = [
+  { href: '/api#jm-str-options-', text: 'jm.str()' },
+  { href: '/api#jm-num-options-', text: 'jm.num()' },
+  { href: '/api#jm-bool-options-', text: 'jm.bool()' },
+  { href: '/api#jm-array-options-', text: 'jm.array()' },
+  { href: '/api#jm-sameas-path-options-', text: 'jm.sameAs()' },
+  { href: '/api#jm-any-options-', text: 'jm.any()' },
+  { href: '/api#jm-validate-data-schema-options-', text: 'jm.validate()' },
+  {
+    href: '/api#jm-validateasync-data-schema-options-',
+    text: 'jm.validateAsync()',
+  },
+  { href: '/api#jm-defaultmessages-messages-', text: 'jm.defaultMessages()' },
 ]
 
 export default {
@@ -23,19 +38,15 @@ export default {
   ),
   links: [
     { href: '/', text: 'Getting Started' },
-    {
-      href: '/types',
-      text: 'Types',
-      subLinks: typeSubLinks,
-    },
-    { text: 'Validation', subLinks: validationSublinks },
-    {
-      href: '/custom-messages',
-      text: 'Custom Messages',
-    },
-
-    { href: '/blog', text: 'Blog' },
-    { href: '/examples', text: 'Examples' },
+    { href: '/types', text: 'Types', subLinks: typeSubLinks },
+    { href: '/validation', text: 'Validation', subLinks: validationSublinks },
+    { href: '/custom-messages', text: 'Custom Messages' },
+    { href: '/custom-validator', text: 'Custom Validator' },
+    { href: '/api', text: 'API', subLinks: apiSublinks },
   ],
-  footer: 'Copyright 2020 @ Darkcris1',
+  footer: (
+    <a target="_blank" href="https://github.com/darkcris1">
+      Copyright © Darkcris1
+    </a>
+  ),
 }

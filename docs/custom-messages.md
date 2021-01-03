@@ -2,37 +2,49 @@
 title: Json Msg | Custom Messages
 --
 
-# Custom Messages
+# Custom Error Messages
 
-## There are two ways to set a message in json-msg
+### Set messages directly on types
 
-### 1st way
+- **%label%** is the label of your data
+- **%keyValue%** is the value of the keys eg. min: 5000
+- **%value%** is the data value that pass in
+
+> The key must be the **same** as the **validator key**
 
 ```javascript
-// set message directly into the type
-const hasNumberString = str({
-   hasNumber: /[0-9]/,
-   min: 5,
-   label: "Username",
-   message: {
-     //hasNumber key should be the same to the validator
-     hasNumber: "%label% must have a number",
+import jm from 'json-msg'
 
-     // %keyValue% is the min: 5
-     min: "%label% must atleast %keyValue% characters length",
-   }
+const schema = {
+  username: jm.str({ min: 5,messages: { min: '%label% must be less than 5' }}),
+}
+```
+
+### Set A messages globally
+
+
+```javascript
+jm.defaultMessage({
+  string: {
+    hasNumber: '%label% must have a number',
+    /// You can set everything including min, max , type etc//.
+    hasUpperCase: '%value% is invalid, it should have uppercase letter',
+    min: 'the %keyValue% is not the minimum length',
+    type: '%label% must be a string text blablabla....',
+  },
 })
-jm.validate("stts",hasNumberString))
-// return "Username must have a number"
 
-// if you validate a single value the label is "this" by default
+jm.defaultMessage({
+  number: {
+    //You can also set the number messages
+  },
+  boolean: {
+    //You can also set the boolean messages
+  },
+  array: {
+    //You can also set the arra messages
+  },
 
-// if the showAllErrors are true this will return an array of messages
-jm.validate("stts",hasNumberString, {showAllErrors: true}))
-/* return [
-  "Username must have a number",
-  "Username must atleast 5 characters length"
-]
-*/
-
+  sameAs: string, // You can also set sameAs
+})
 ```

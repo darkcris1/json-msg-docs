@@ -98,7 +98,7 @@ const boolWithOption = {
 
 # sameAs
 
-> sameAs is just like a ref in joi
+sameAs is just like a ref in joi
 
 > This is only allowed on relative path
 

@@ -8,7 +8,7 @@ author: Cris Fandino Jr.
 # Getting Started with Json-msg
 
 JSON-MSG is a lightweight alternative for Joi or Yup or any json validator.
-Unlike Joi json-msg only focus on error messages
+Unlike Joi, json-msg only focus on error messages
 
 # Features
 
@@ -47,11 +47,13 @@ import jm "json-msg";
 const schema = {
   username: jm.str(),
   password: jm.num()
+  confirmPassword: jm.sameAs("password")
 }
 
 const data = {
   username: "cris123",
   password: 123456,
+  confirmPassword: 123456,
 }
 jm.validate(data,schema)
 ```

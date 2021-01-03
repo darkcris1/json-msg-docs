@@ -5,6 +5,16 @@ import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-python'
 
 const renderer = new marked.Renderer()
+renderer.heading = (text, level) => {
+  const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-')
+
+  return `
+          <h${level}>
+            <a name="${escapedText}" class="anchor" href="#${escapedText}">
+            </a>
+            ${text}
+          </h${level}>`
+}
 
 renderer.code = function (code, lang) {
   code = this.options.highlight(code, lang)
