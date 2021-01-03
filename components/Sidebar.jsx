@@ -5,7 +5,7 @@ import Toggler from './Toggler'
 import sidebarConfig from '../sidebar.config'
 
 const Sidebar = () => {
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const toggle = () => setShow(!show)
   const { links, logo, footer } = sidebarConfig
   return (
