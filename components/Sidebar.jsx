@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Link from './common/Link'
 import SidebarLinks from './common/SidebarLinks'
-import Toggler from './toggler'
+import Toggler from './Toggler'
 import sidebarConfig from '../sidebar.config'
 
 const Sidebar = () => {
