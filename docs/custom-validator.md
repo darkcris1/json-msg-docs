@@ -18,6 +18,7 @@ const schema = {
 ### Function
 
 - **value** is the value of the data that you passed in
+- **function** must return a **boolean**
 
 ```javascript
 import jm from 'json-msg'

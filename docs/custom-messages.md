@@ -4,24 +4,26 @@ title: Json Msg | Custom Messages
 
 # Custom Error Messages
 
-### Set messages directly on types
-
 - **%label%** is the label of your data
 - **%keyValue%** is the value of the keys eg. min: 5000
 - **%value%** is the data value that pass in
 
 > The key must be the **same** as the **validator key**
 
+### Set messages directly on types
+
 ```javascript
 import jm from 'json-msg'
 
 const schema = {
-  username: jm.str({ min: 5,messages: { min: '%label% must be less than 5' }}),
+  username: jm.str({
+    min: 5,
+    messages: { min: '%label% must be less than 5' },
+  }),
 }
 ```
 
 ### Set A messages globally
-
 
 ```javascript
 jm.defaultMessage({
