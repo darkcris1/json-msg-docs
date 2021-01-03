@@ -12,8 +12,8 @@ description: json-msg api for all functions
 | options       | type               | description                                |
 | ------------- | ------------------ | ------------------------------------------ |
 | required      | boolean?           | check if the value is not empty            |
-| min           | number?            | min length or min value                    |
-| max           | number?            | max length or max value                    |
+| min           | number?            | min length                                 |
+| max           | number?            | max length                                 |
 | alphanum      | boolean?           | validate if the value is only alphanumeric |
 | label         | string?            | label of the message                       |
 | email         | boolean?           | check if the value is valid email          |
@@ -31,7 +31,7 @@ description: json-msg api for all functions
 | integer       | boolean?             | check if the value is integer      |
 | float         | boolean              | check if the value is float number |
 | digit         | number?              | check if the digits is             |
-| allow         | any[]?               | add a allowed values               |
+| allow         | any[]?               | add an allowed values              |
 | label         | string?              | label of the message               |
 | messages      | object?              | Set a custom messages              |
 | [key?:string] | regexp? \| function? | custom validator                   |
@@ -41,23 +41,23 @@ description: json-msg api for all functions
 | options       | type                 | description                     |
 | ------------- | -------------------- | ------------------------------- |
 | required      | boolean?             | check if the value is not empty |
-| allow         | any[]?               | add a allowed values            |
+| allow         | any[]?               | add an allowed values           |
 | label         | string?              | label of the message            |
 | messages      | object?              | Set a custom messages           |
 | [key?:string] | regexp? \| function? | custom validator                |
 
 ### jm.array(options?)
 
-| options       | type                 | description                     |
-| ------------- | -------------------- | ------------------------------- |
-| required      | boolean?             | check if the value is not empty |
-| min           | number?              | minimum length                  |
-| max           | number?              | maximum length                  |
-| items         | jm-types[]?          | check if the digits is          |
-| allow         | any[]?               | add a allowed values            |
-| label         | string?              | label of the message            |
-| messages      | object?              | Set a custom messages           |
-| [key?:string] | regexp? \| function? | custom validator                |
+| options       | type                 | description                         |
+| ------------- | -------------------- | ----------------------------------- |
+| required      | boolean?             | check if the value is not empty     |
+| min           | number?              | minimum length                      |
+| max           | number?              | maximum length                      |
+| items         | jm-types[]?          | types of the items inside the array |
+| allow         | any[]?               | add an allowed values               |
+| label         | string?              | label of the message                |
+| messages      | object?              | Set a custom messages               |
+| [key?:string] | regexp? \| function? | custom validator                    |
 
 ### jm.sameAs(path?, options?)
 
