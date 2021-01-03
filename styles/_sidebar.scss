@@ -4,13 +4,15 @@ nav.sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease-in;
+  transition: transform 0.5s ease-in;
   transform: translateX(-100%);
   width: 250px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--border-color);
   z-index: 999;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   &.show {
     transform: translate(0);
   }
