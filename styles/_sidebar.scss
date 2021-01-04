@@ -1,5 +1,5 @@
 nav.sidebar {
-  background: white;
+  background: var(--background);
   height: 100%;
   position: fixed;
   top: 0;
@@ -25,9 +25,12 @@ nav.sidebar {
     text-align: center;
   }
   a.active {
-    font-weight: bolder;
-
+    color: var(--secondary-text);
+    font-weight: 500;
     position: relative;
+    &:hover {
+      color: var(--secondary-text);
+    }
   }
   ul {
     padding: 0;
@@ -73,6 +76,9 @@ nav.sidebar {
   footer {
     padding: 1rem;
     text-align: center;
+    span {
+      color: var(--secondary-text);
+    }
   }
 }
 .nav-modal {
