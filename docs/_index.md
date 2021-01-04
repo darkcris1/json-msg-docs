@@ -9,7 +9,7 @@ author: Cris Fandino Jr.
 # @(title)
 
 JSON-MSG is a lightweight alternative for Joi or Yup or any json validator.
-Unlike Joi, json-msg only focus on error messages and validations
+Unlike Joi, json-msg focused only on error messages and validations
 
 # Features
 
