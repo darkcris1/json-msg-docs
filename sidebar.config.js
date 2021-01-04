@@ -26,14 +26,7 @@ const apiSublinks = [
 ]
 
 export default {
-  logo: (
-    <img
-      src="https://www.flaticon.com/premium-icon/icons/svg/2581/2581980.svg"
-      alt="Json-msg logo"
-      width="160"
-      height="100"
-    />
-  ),
+  logo: <img src="./logo.svg" alt="Json-msg logo" width="160" height="100" />,
   links: [
     { href: '/', text: 'Getting Started' },
     { href: '/types', text: 'Types', subLinks: typeSubLinks },
@@ -44,7 +37,7 @@ export default {
   ],
   footer: (
     <a target="_blank" href="https://github.com/darkcris1">
-      Copyright © Darkcris1
+      Copyright © <span>Darkcris1</span>
     </a>
   ),
 }
