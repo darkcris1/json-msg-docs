@@ -1,0 +1,9 @@
+{
+  "name": "json-msg | documentation",
+  "short_name": "json-msg",
+  "theme_color": "#dacb02",
+  "background_color": "#dacb02",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
