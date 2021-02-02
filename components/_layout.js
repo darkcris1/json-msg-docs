@@ -1,6 +1,6 @@
-import SEO from '../components/SEO'
-import Sidebar from '../components/Sidebar'
-import GithubAccount from '../components/GithubAccount'
+import SEO from './SEO'
+import Sidebar from './Sidebar'
+import GithubAccount from './GithubAccount'
 import sidebarConfig from '../sidebar.config'
 
 const Layout = ({ title, children }) => {
@@ -18,7 +18,7 @@ const Layout = ({ title, children }) => {
             src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"
           ></script>
           <link rel="shortcut icon" href="./logo.svg" type="image/svg" />
-          <link rel="manifest" href="manifest.json" />
+          <link rel="manifest" href="/manifest.json" />
         </SEO>
         <Sidebar config={sidebarConfig} />
 
