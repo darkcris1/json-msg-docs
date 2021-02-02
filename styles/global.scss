@@ -2,11 +2,10 @@ $text-color: rgb(82, 82, 82);
 :root {
   --accent-color: #dacb02;
   --text-color: #{$text-color};
-  --secondary-text: #dacb02;
   --border-color: rgba(100, 76, 76, 0.596);
   --sublinks-list-type: '-';
   --md-links-color: #dacb02;
-  --background: rgb(235, 234, 234);
+  --background: rgb(255, 255, 255);
 }
 
 @import './functions';
