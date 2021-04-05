@@ -7,7 +7,7 @@ description: json-msg api for all functions
 
 **options: object?** - options for validation
 
-### jm.str(options?)
+## jm.str(options?)
 
 | options       | type               | description                                |
 | ------------- | ------------------ | ------------------------------------------ |
@@ -21,7 +21,7 @@ description: json-msg api for all functions
 | messages      | object?            | Set a custom messages                      |
 | [key?:string] | regexp \| function | custom validator                           |
 
-### jm.num(options?)
+## jm.num(options?)
 
 | options       | type                 | description                        |
 | ------------- | -------------------- | ---------------------------------- |
@@ -36,7 +36,7 @@ description: json-msg api for all functions
 | messages      | object?              | Set a custom messages              |
 | [key?:string] | regexp? \| function? | custom validator                   |
 
-### jm.bool(options?)
+## jm.bool(options?)
 
 | options       | type                 | description                     |
 | ------------- | -------------------- | ------------------------------- |
@@ -46,7 +46,7 @@ description: json-msg api for all functions
 | messages      | object?              | Set a custom messages           |
 | [key?:string] | regexp? \| function? | custom validator                |
 
-### jm.array(options?)
+## jm.array(options?)
 
 | options       | type                 | description                         |
 | ------------- | -------------------- | ----------------------------------- |
@@ -59,7 +59,7 @@ description: json-msg api for all functions
 | messages      | object?              | Set a custom messages               |
 | [key?:string] | regexp? \| function? | custom validator                    |
 
-### jm.sameAs(path?, options?)
+## jm.sameAs(path?, options?)
 
 **path: string?** - relative path of reference
 
@@ -68,14 +68,14 @@ description: json-msg api for all functions
 | label    | string? | label of the message  |
 | messages | object? | Set a custom messages |
 
-### jm.any(options?)
+## jm.any(options?)
 
 | options  | type     | description                     |
 | -------- | -------- | ------------------------------- |
 | required | boolean? | check if the value is not empty |
 | messages | object?  | Set a custom messages           |
 
-### jm.validate(data, schema, options?)
+## jm.validate(data, schema, options?)
 
 ### jm.validateAsync(data, schema, options?)
 
@@ -88,7 +88,7 @@ description: json-msg api for all functions
 | abortEarly    | boolean? | Abort Immediately if there is an error on validation |
 | showAllErrors | boolean? | show all the errors on the array                     |
 
-### jm.defaultMessages(messages)
+## jm.defaultMessages(messages)
 
 | options  | type   | description                     |
 | -------- | ------ | ------------------------------- |
