@@ -46,19 +46,19 @@ jm.validate("stts",num()))
 //return "This must be a number"
 ```
 
-# validateAsync
+## validateAsync
 
 ```javascript
-jm.validateAsync(todoData, todoSchema)
+jm.validateAsync(todoData, todoSchema);
 ```
 
-# Single Validation
+## Single Validation
 
 ```javascript
-jm.validate(123, num())
+jm.validate(123, num());
 ```
 
-# Option
+## Option
 
 abortEarly? - Abort Immediately if there is an error on validation
 
@@ -66,5 +66,5 @@ showAllErrors? - show all the errors on the array
 
 ```javascript
 // default value
-jm.validate(data, schema, { abortEarly: true, showAllErrors: false })
+jm.validate(data, schema, { abortEarly: true, showAllErrors: false });
 ```

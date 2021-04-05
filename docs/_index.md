@@ -11,14 +11,14 @@ author: Cris Fandino Jr.
 JSON-MSG is a lightweight alternative for Joi or Yup or any json validator.
 Unlike Joi, json-msg focused only on error messages and validations
 
-# Features
+## Features
 
-- Customizable Messages
-- Custom Validation
-- Easy Configuration
-- Lightweight 4.6kb
-- Fast
-- No Dependencies
+-  Customizable Messages
+-  Custom Validation
+-  Easy Configuration
+-  Lightweight 4.6kb
+-  Fast
+-  No Dependencies
 
 ## Installation
 
@@ -40,7 +40,7 @@ UNPKG Unbabel version - 4.6kb (IE not supported)
 <script src="https://unpkg.com/json-msg/dist/jm.unbabel.min.js"></script>
 ```
 
-# Usage
+## Usage
 
 ```javascript
 import jm "json-msg";
